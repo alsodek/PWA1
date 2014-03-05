@@ -637,6 +637,7 @@ console.log('------Functions ----------');
 	var myctr = 1;
 	
 	var myCounter = function(newct){
+		var myctr = 50;
 		myctr += newct;
 		console.log("counter = ", myctr);	
 	};
@@ -654,7 +655,12 @@ console.log('------Functions ----------');
     - the called function should be assigned to a variable (i.e name - see below)
  ********************************************/
 
-
+	var myFn = function(){
+		return "jamesBond";
+	};
+	
+	var name = myFn();
+	console.log("name: ", name);
 
     // if a return gives back no value, it instead returns “undefined”
     // this technique is commonly used to end a function early, during execution
@@ -672,7 +678,19 @@ console.log('------Functions ----------');
     4.  console.log the results
  ********************************************/
 
+	var myctr = 1;
+	
+	var myCounter = function(newct){
+		var myctr = 50;
+		myctr += newct;
+		return myctr;
+	};
 
+	var cnt = myCounter(5);
+	console.log("counter = ", cnt);	
+	
+	var cnt = myCounter(2);
+	console.log("counter = ", cnt);	
 
 
 /*******************************************
