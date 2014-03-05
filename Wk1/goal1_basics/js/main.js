@@ -703,3 +703,30 @@ console.log('------Functions ----------');
  5. console.log the Results
  ********************************************/
 
+var value1 = "sunny"
+var value2 = 10;
+
+var moodFun = function(weather, waves){
+	if(weather === "sunny"){
+		if (waves === 10){
+			bobsMood = "pumped";
+		}else if ((waves <= 9) && (waves >= 5)){
+			bobsMood = "mellow";
+		}else
+			bobsMood = "bummed";
+	}else if(weather === "overcast"){
+		if ((waves <= 10) && (waves >= 7)){
+			bobsMood = "jackedUp";
+		}else if ((waves <= 6) && (waves >= 3)){
+			bobsMood = "totally bummed";
+		}else
+			bobsMood = "not happy";
+	}else 
+		bobsMood = "sad";
+		
+	return bobsMood;
+}
+
+	var final = moodFun(value1, value2);
+	
+	console.log("Bob is", final)
