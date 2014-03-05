@@ -565,9 +565,18 @@ console.log('------Functions ----------');
      - type the below as an example
         functionName();
  *****************************
+*/
 
+	var myctr = 1;
+	
+	var myCounter = function(){
+		var testVar = 0;
+		myctr++;
+		console.log("counter = ", myctr);	
+	};
 
-
+	myCounter();
+	myCounter();
 
  /*
     function literal: passing data into a function
@@ -604,8 +613,14 @@ console.log('------Functions ----------');
     - items inside our function we call on these variables.. such as:
  */
 
+	var value1 = 1;
+	var value2 = 2;
+	
+	var myFn = function(var1, var2){
+		console.log("function number: ", var1 + var2);
+	};
 
-
+	myFn(value1, value2);
 
 /*******************************************
  STUDENT ACTIVITY 6:
@@ -619,9 +634,16 @@ console.log('------Functions ----------');
      6.  console.log the results
  ********************************************/
 
+	var myctr = 1;
+	
+	var myCounter = function(newct){
+		myctr += newct;
+		console.log("counter = ", myctr);	
+	};
 
-
-
+	myCounter(5);
+	myCounter(2);
+	
 /*******************************************
  function literal: returning values
 
