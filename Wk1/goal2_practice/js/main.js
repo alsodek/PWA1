@@ -477,6 +477,12 @@ console.log('------ MORE Conditionals - Switch ----------');
 
 console.log('------ MORE Functions ----------');
 
+	var bondsCars = function(){
+		return ["ferrari", "lambo", "vwBug"];
+	};
+	
+	var cars = bondsCars();
+	console.log("James Bonds' cars, ", cars);
 
 	/* 
 		Self Executing Functions
@@ -494,6 +500,11 @@ console.log('------ MORE Functions ----------');
 				var fn = (function(){})();	
 	*/	
 
+	var fn = function(){};
+	
+	fn();
+	
+	(function(){})();
 
 /*
 	===============================================
@@ -526,6 +537,12 @@ console.log('------ MORE Functions ----------');
 */
 console.log('------ While / Loop ----------');
 
+	var numOfBeers = 10;
+	
+	while(numOfBeers > 0){
+		console.log(numOfBeers + " kegs on the wall.");
+		numOfBeers--;
+	}
 	
 /*
 	===============================================
@@ -551,6 +568,9 @@ console.log('------ While / Loop ----------');
 
 console.log('------For Loop ----------');
 
+	for(var beers = 10; beers > 0; beers--){
+		console.log(beers + " bottles of beer on the wall.");
+	};
 
 	/* 
 		array.Length
@@ -564,6 +584,8 @@ console.log('------For Loop ----------');
 			- the  .length property returns the count, which would be 5	
 	*/	
 
+	var myNums = [1,2,3,4,5];
+	console.log("length: ", myNums.length);
 
 	/* 
 		using the for() loop with .length
@@ -584,6 +606,9 @@ console.log('------For Loop ----------');
 			save the array length in a variable, inside the first statement
 	*/
 
+	for(var i=0, j=myNums.length; i<j; i++){
+		console.log(myNums[i]);
+	};
 
 	/*
 		BREAK...
@@ -593,7 +618,13 @@ console.log('------For Loop ----------');
 			break point, and perform no more iterations
 	*/
 
-
+	for(var i=0, j=myNums.length; i<j; i++){
+		if(i === 3){
+			console.log("testing out the break and it broke.");
+			break;
+		};
+		console.log("2. length in for loop: ", myNums[i]);
+	};
 
 	/*
 		CONTINUE...
@@ -603,6 +634,13 @@ console.log('------For Loop ----------');
 			on to the next iteration
 	*/
 
+	for(var i=0, j=myNums.length; i<j; i++){
+		if(i === 3){
+			console.log("testing out the break and it broke.");
+			continue;
+		};
+		console.log("length in for loop: ", myNums[i]);
+	};
 
 /*******************************************
  STUDENT ACTIVITY 7:
@@ -616,7 +654,15 @@ console.log('------For Loop ----------');
 			- in the loop just console.log the values
 ********************************************/
 
+	var myArray = ["Superman", "Batman", "Wolverine", "Iceman"];
+	
+	for(var i=0; i<myArray.length; i++){
+		console.log(myArray[i]);
+	};
 
+	for(var i=0, j=myArray.length; i<j; i++){
+		console.log(myArray[i]);
+	};
 
 /*******************************************
     STUDENT ACTIVITY 8: (More Practice):
@@ -635,6 +681,9 @@ console.log('------For Loop ----------');
      - add "NEW VALUE"
      12. output the array without "NEW VALUE"
 ********************************************/
+
+
+	
 
     console.log('------ More PRACTICE ----------');
 
