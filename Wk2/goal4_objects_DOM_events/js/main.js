@@ -209,6 +209,8 @@ console.log('------ STUDENT ACTIVITY - ANSWERS BELOW ----------');
     2.  console.log the average grade by calling the gradeAvg method.
 ----------------------------------------------------------------------------- */
 
+//IMPORTANT
+
 	var gradeAvg = function(obj){
 		var count = 0;
 		var total = 0;
@@ -233,7 +235,13 @@ console.log('------ STUDENT ACTIVITY - ANSWERS BELOW ----------');
 */
     console.log("---------- Object - For In Loop ----------------");
 
-
+	var students = {name:'JamesBond', gender:'male', job:'student'};
+	
+	for(var key in students){
+		console.log('Key Name: ', key);
+		console.log('Value of the key[',key,']: ',students[key]);
+		
+	};
 
 /*
 	===============================================
@@ -268,7 +276,11 @@ console.log('------ STUDENT ACTIVITY - ANSWERS BELOW ----------');
 */
     console.log('------ Objects - Converting Datatypes ----------');
 
-
+	var myNum = 1;
+	myString = String(myNum);
+	console.log('myString: ', typeof myString, myString);
+	myBool = Boolean(myString);
+	console.log('myBool: ', typeof myBool, myBool);
 
 /*
 	- because these values act as objects, the data types also have methods and 
@@ -279,19 +291,44 @@ console.log('------ STUDENT ACTIVITY - ANSWERS BELOW ----------');
 
 // #1 - shows string length
 
+	myStr = 'OMG';
+	console.log(myStr.length);
 
 // #2 - shows array length
 	
+	myArray = [6,10];
+	console.log(myArray.length);
 
 // #3 - shows and array of objects, inside of an object length
+	
 	
 
 console.log('------ MORE Object examples - Objects/Functions ----------');
 
+	var object = {
+		schoolName: 'Full Sail',
+		address: '123 University Ave',
+		studentCount: 16000,
+		students:[
+			{name: 'John Doe', GPA: 2.6, classes:['PWA1','PWA2']},
+			{name: 'Albert Einstein', GPA: 4.0},
+			{name: 'James Bond', GPA: 3.9},
+		]
+	};
+
+	console.log('number of object fields', object.students.length);
+
 // showing a function call and creating a method
 
+	var fn = function(name, course){
+		return{
+			sayHi: function(){
+				console.log("MY name is " + name + " I am in course " + course);
+			}
+		}	
+	};
 
-
+	fn("JamesBond","PWA1").sayHi();
 /*
 	==================================================================
 	DOCUMENT OBJECT MODEL
@@ -303,7 +340,7 @@ console.log('------ MORE Object examples - Objects/Functions ----------');
 console.log('------------ DOCUMENT OBJECT MODEL -------------------');
 
 //Window DOM object
-/*
+
  console.log(window);
  console.log(window.location);
  console.log(window.history);
@@ -313,7 +350,7 @@ console.log('------------ DOCUMENT OBJECT MODEL -------------------');
  console.log(document);
  console.log(document.body);
  console.log(document.head);
- */
+ 
 
 
 /*
