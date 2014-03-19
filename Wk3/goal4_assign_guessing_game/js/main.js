@@ -92,5 +92,9 @@
 		};
 	};
 	
+	console.log(magicNum);
+	
+	//addEventListener method
+	dom.button.addEventListener("click", clickFn, false);
 	
 })();
