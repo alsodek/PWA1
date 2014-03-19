@@ -7,6 +7,14 @@
 
     myform.onsubmit = function(e){
 
+		var input_name = document.querySelector("#f_username");
+		var input_email = document.querySelector("#f_email");
+		var input_phone = document.querySelector("#f_phone");
+		var input_password = document.querySelector("#f_password");
+		var input_ssn = document.querySelector("#f_ssn");
+		
+		
+		
         //Below is one example of the validateField call with an argument.
         //You must dynamically retrieve the ID name from the DOM/HTML.
 
