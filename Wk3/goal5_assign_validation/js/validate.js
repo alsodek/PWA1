@@ -1,6 +1,6 @@
 /*
-     Developed by the JavaScript team at Fullsail
-     Date: 1306
+    Alan Sodek
+    March 19, 2014
 */
 
 (function(){
