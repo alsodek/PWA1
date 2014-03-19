@@ -43,7 +43,7 @@
             var pattern = /^\d{3}-\d{2}-\d{4}$/;    
         };
 
-        var pass = 'the RegEx .test statement is needed here';
+        var pass = pattern.test(inputName.value);
         var errorMsg = inputName.nextSibling.nextSibling.nextSibling.nextSibling;
 
         if (!pass || inputName.value.length < 2){
