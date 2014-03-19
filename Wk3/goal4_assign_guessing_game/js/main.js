@@ -84,4 +84,13 @@
 		dom.button.removeEventListener("click", clickFn, false);
 		
 	};
+	
+	var onKeyDown = function(e){
+		
+		if(e.keyCode === 13){
+			validateInput();
+		};
+	};
+	
+	
 })();
