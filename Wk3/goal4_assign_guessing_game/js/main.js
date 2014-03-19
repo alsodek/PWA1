@@ -67,34 +67,5 @@
 			gameOver(false);
 		};
 	};
-	
-	var gameOver = function(win){
-		
-		if(win){
-			dom.output.innerHTML
-				= "Yes, it's " + magicNum + "!" + "<br>"
-				+ "It only took you " + guessesMade + " guesses.";
-		}else{
-			dom.output.innerHTML
-				= "No more guesses left!" + "<br>"
-				+ "The number was: " + magicNum + ".";
-		};
-		
-		//Disable the button
-		dom.button.removeEventListener("click", clickFn, false);
-		
-	};
-	
-	var onKeyDown = function(e){
-		
-		if(e.keyCode === 13){
-			validateInput();
-		};
-	};
-	
-	console.log(magicNum);
-	
-	//addEventListener method
-	dom.button.addEventListener("click", clickFn, false);
 
 })();
