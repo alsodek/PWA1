@@ -18,8 +18,11 @@
         //Below is one example of the validateField call with an argument.
         //You must dynamically retrieve the ID name from the DOM/HTML.
 
-        validateField(id);  //id = is the form input field ID
-
+        validateField(input_uname);  //id = is the form input field ID
+		validateField(input_email);
+		validateField(input_phone);
+		validateField(input_password);
+		validateField(input_ssn);
 
         e.preventDefault();
         return false;
