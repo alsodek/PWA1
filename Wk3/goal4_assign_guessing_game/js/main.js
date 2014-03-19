@@ -67,7 +67,7 @@
 			gameOver(false);
 		};
 	};
-
+	
 	var gameOver = function(win){
 		
 		if(win){
@@ -96,5 +96,5 @@
 	
 	//addEventListener method
 	dom.button.addEventListener("click", clickFn, false);
-	
+
 })();
