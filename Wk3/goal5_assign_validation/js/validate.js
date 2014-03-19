@@ -7,7 +7,7 @@
 
     myform.onsubmit = function(e){
 
-		var input_name = document.querySelector("#f_username");
+		var input_uname = document.querySelector("#f_username");
 		var input_email = document.querySelector("#f_email");
 		var input_phone = document.querySelector("#f_phone");
 		var input_password = document.querySelector("#f_password");
