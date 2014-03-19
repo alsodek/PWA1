@@ -31,13 +31,16 @@
 
     var validateField = function(inputName){
 
-        if (inputName.name === 'id name goes here'){
-            var pattern = 'a RegEx pattern goes here'
-
-            //You will need to create an else-if statement for each input field id.  The
-            //      format will be similar to the above IF statement.
-
-
+        if (inputName.name === 'f_username'){
+            var pattern = /[^A-Za-z0-9_@\.]|@{2,}|\.{5,}/;     
+        }else if(inputName.name === 'f_email'){
+            var pattern = /^[\w\.=-]+@[\w\.-]+\.[\w]{2,3}$/;    
+        }else if(inputName.name === 'f_phone'){
+            var pattern = /^[2-9]\d{2}-\d{3}-\d{4}$/;    
+        }else if(inputName.name === 'f_password'){
+            var pattern = /^[a-zA-Z]\w{3,14}$/;    
+        }else if(inputName.name === 'f_ssn'){
+            var pattern = /^\d{3}-\d{2}-\d{4}$/;    
         };
 
         var pass = 'the RegEx .test statement is needed here';
